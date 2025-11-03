@@ -7,7 +7,7 @@ int main (){
     printf("Enter a height for triangle: ");
     scanf("%d",&num);
     for(int x = 1 ; x<=num;x++){
-        for (int y  = 1; y <count ; y++)
+        for (int y  = 1; y <=x ; y++)
         {
             printf("#");
             /* code */
