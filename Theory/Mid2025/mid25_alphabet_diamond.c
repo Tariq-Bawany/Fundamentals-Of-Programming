@@ -1,6 +1,14 @@
 #include<stdio.h>
 /*
-
+    V
+   UVW
+  TUVWX
+ STUVWXY
+RSTUVWXYZ
+ STUVWXY
+  TUVWX
+   UVW
+    V
 */
 int main (){
     int h = 9;
