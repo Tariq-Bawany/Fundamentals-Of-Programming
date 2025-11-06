@@ -1,5 +1,7 @@
 #include<stdio.h>
-
+/*
+Write a program to interchange values of two operands a and b.
+*/
 int main (){
     int a,b,temp;
     printf("Enter first Number :");

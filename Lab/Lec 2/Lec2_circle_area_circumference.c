@@ -1,5 +1,8 @@
 #include<stdio.h>
-
+/*
+The radius of a circle is input through the keyboard. Write a program to calculate the area &
+circumference of the circle.
+*/
 int main (){
     float radius, pi = 3.14159,area,circumference;
     printf("enter radius of circle:");

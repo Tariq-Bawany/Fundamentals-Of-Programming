@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+Write a program to swap numbers. (Without using the temp variables. Use Arithmetic Operators)
+*/
 
 int main()
 {
