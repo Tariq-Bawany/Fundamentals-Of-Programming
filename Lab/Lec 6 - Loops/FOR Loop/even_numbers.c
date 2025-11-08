@@ -1,6 +1,7 @@
 #include<stdio.h>
-
-// Write a C program that uses a for loop to print all even numbers from 2 to 20.
+/*
+Write a C program that uses a for loop to print all even numbers from 2 to 20.
+*/
 int main (){
     for(int i=2 ; i<=20;++i){
         if(i%2 == 0){ // checks the remainder is zero or not when divided by 2
