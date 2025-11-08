@@ -20,6 +20,7 @@ int main (){
         ascii = 82;
         for(int j =0;j<values_in_row;j++){
             j<values_in_row-asteriks?printf(" "):printf("%c",ascii);
+            // printf("%c",ascii);
             ascii++;
         }
         if(middle<9){
