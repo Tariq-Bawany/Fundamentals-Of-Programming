@@ -27,6 +27,8 @@ int main(){
         }
         
         /* code */
+    }else{
+        printf("Invalid");
     }
     
 return 0;
