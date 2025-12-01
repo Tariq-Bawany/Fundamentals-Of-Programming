@@ -1,31 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main (){
-    printf("\n");
-    int asteriks, count,middle, values_in_row = 5;
-    asteriks = middle =1;
-    for ( count = 0; count < 9; count++)
+int main()
+{
+    int spc = 4; // starting diamond white space
+    int hl = 5; // total values of horizontal loops (inner - loop)
+    for (int i = 1; i <= 9; i++)
     {
-        // printf("%d \t",asteriks);
-        // printf("%d \t",middle);
-        // printf("%d \n",values_in_row);
-        for(int j =0;j<values_in_row;j++){
-            // printf("*");
-            j<values_in_row-asteriks?printf(" "):printf("*");
-        }
-        if(middle<9){
-            asteriks+=2;
-            middle+=2;
-            values_in_row++;
-        }else{
-            values_in_row--;
-            middle+=2;
-            asteriks-=2;
+        for (int j = 1; j <= hl; j++)
+        // for loop is run till hl values
+        {
+            // if j is greater than white space it will print asteriks (*)
+            // else it will print white space
+            j>spc ?printf("*"):printf(" ");
         }
         printf("\n");
+        
+        if(i>9/2){
+            hl--;
+            spc++;
+        }else{
+            spc--;
+            hl++;
+        }
     }
-    printf("\n");
-
-    
     return 0;
 }
