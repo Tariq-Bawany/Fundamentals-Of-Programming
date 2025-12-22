@@ -5,29 +5,44 @@ Create a program that inserts an element at a specified position in an array.
 
 int main()
 {
-    // initializing the array
-    int size = 10;
-    int arr[size];
+    int arr[100];
+    int size;
+    printf("Enter the size of array:");
+    scanf("%d", &size);
+    printf("Enter the Values  of array:\n");
     for (int i = 0; i < size; i++)
     {
-        arr[i] = i + 1;
+        scanf("%d", &arr[i]);
     }
-
-    //  inserting an element in the array
-    int add_index = 3;
-    size++;
-    int size_copy = size;
-    int add_element = 19;
-    arr[10] =19;
-    for (int i = size-1; i >= 0; i--)
+    printf("\n");
+    for (int i = 0; i < size; i++)
     {
-        if(i>add_index){
-            arr[i] = arr[i-1];
+        printf("%d : %d\n",i, arr[i]);
+    }
+    printf("\n");
+
+    int add_index;
+    int add_element;
+    printf("Enter the Element & and the Position of index:\n");
+    scanf("%d", &add_element);
+    scanf("%d", &add_index);
+    size++;
+    for (int i = size - 1; i >= add_index; i--)
+    {
+        if (i > add_index)
+        {
+            arr[i] = arr[i - 1];
         }
-        if(i==add_index){
+        if (i == add_index)
+        {
             arr[i] = add_element;
         }
-        printf(" %d : %d\n",i , arr[i]);
+        // printf(" %d : %d\n",i , arr[i]);
     }
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d : %d\n",i, arr[i]);
+    }
+    printf("\n");
     return 0;
 }
